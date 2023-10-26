@@ -1,345 +1,767 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SFR - Saison 5</title>
-
-    <style>
-        .headline{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgb(0, 12, 1);
-            font-size: xx-large;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .logo{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .background{
-            background-color: rgb(151, 241, 241);
-        }
-        .table-wrapper {
-            overflow: scroll;
-            -webkit-overflow-scrolling: touch;
-        }.ferrari{
-            background-color:rgb(255, 49, 49);
-        }
-        .ersatz{
-            background-color:rgb(200, 200, 200);
-        }
-        .ferrari_light{
-            background-color:rgb(255, 49, 49);
-            opacity: 0.5;
-        }
-        .mercedes{
-            background-color: cyan;
-        }
-        .redbull{
-            background-color: darkblue;
-            color: white;
-        }
-        .williams{
-            background-color: blue;
-            color: white;
-        }
-        .alpine{
-            background-color: rgb(56, 142, 255);
-        }
-        .alfaromeo{
-            background-color: darkred;
-            color: white;
-        }
-        .alphatauri{
-            background-color: rgb(118, 96, 129);
-            color: white;
-        }
-        .mclaren{
-            background-color: orange;
-        }
-        .astonmartin{
-            background-color: rgb(83, 170, 83);
-        }
-        .haas{
-            background-color: white;
-        }
-        .dnf-text {
-            font-size: 75%;
-            color: red;
-        }
-
-        .dnf-points{
-            font-size: 75%;
-            color: black;
-        }
-
-        .dns-text {
-            font-size: 75%;
-            color: darkblue;
-        }
-
-        .first {
-            background-color: rgb(241, 241, 87);
-        }
-        .first-sprint {
-            background-color: rgb(236, 236, 161);
-        }
-
-        .second {
-            background-color: rgb(187, 187, 187);
-        }
-
-        .third {
-            background-color: burlywood;
-        }
-
-        .fastest {
-            color: darkviolet;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-        .image-min {
-            width: 30px;
-            text-align: center;
-        }
-
-        .gleich_groß{
-            width: 30px;
-            font-size: smaller;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="background">
 
     <!-- Überschrift -->
-    <div class="headline">
-    Super F1 Racing (SFR) <br>
-    </div>
+    <h1>
+        SFR
+    </h1>
 
     <!-- Logo -->
-    <div class="logo">
-    <img  src="SFR_Logo_S5.png">
-    </div>
 
-    <div>
-        <table>
-            <thead>
-                <tr align="center">
-                    <th>#</th>
-                    <th>Fahrer</th>
-                    <th>Team</th>
-                    <th class="points">Punkte</th>
-                    <th class="gleich_groß"><img class="image-min" src="spanien_klein.png">   </th>
-                    <th class="gleich_groß"><img class="image-min" src="großbritannien.png">sprint</th>
-                    <th class="gleich_groß"><img class="image-min" src="großbritannien.png"></th>
-                    <th class="gleich_groß"><img class="image-min" src="imola.png"></th>
-                    <th class="gleich_groß"><img class="image-min" src="katar.png"></th>
-                    <th class="gleich_groß"><img class="image-min" src="baku.png"></th>
-                    <th class="gleich_groß"><img class="image-min" src="japan.png"></th>
-                    <th class="gleich_groß"><img class="image-min" src="belgien.png">sprint</th>
-                    <th class="gleich_groß"><img class="image-min" src="belgien.png"></th>
-                    <th class="gleich_groß"><img class="image-min" src="niederlande.png"></th>
-                    <th class="gleich_groß"><img class="image-min" src="usa.png"></th>
-                    <th class="gleich_groß"><img class="image-min" src="portugal_klein.png"><br> </th>
-                    <th class="gleich_groß"><img class="image-min" src="saudi-arabien.png"><br></th>
-                    <th class="gleich_groß"><img class="image-min" src="brasilien.png"><br></th>
-                </tr>
-                </thead>
-                <!-- Zeile 1 -->
-                <tbody align="center">
-    
-                
-                
-                <tr>
-                    <td class="first"> 1.</td>
-                    <td> ItziiiBitziii </td>
-                    <td class="mercedes"> Mercedes </td>
-                    <td> 184</td>
-                    <td class="second">2.</td>
-                    <td>6.</td>
-                    <td>9.</td>
-                    <td class="fastest">6.</td>
-                    <td>4.</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="third">3.</td>
-                    <td>2.</td>
-                    <td class="third fastest">3.</td>
-                    <td>7.</td>
-                    <td class="first">1.</td>
-                    <td class="first fastest">1.</td>
-                    <td class="second fastest">2.</td>
-                    <td class="first fastest">1.</td>
-                </tr>
-                <tr>
-                    <td class="second"> 2.</td>
-                    <td> MarvinSCP10 </td>
-                    <td class="williams"> Williams </td>
-                    <td> 167</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="first">1.*</td>
-                    <td>12.*</td>
-                    <td class="first">1.</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="first-sprint">1.*</td>
-                    <td class="first">1.</td>
-                    <td>5.</td>
-                    <td class="third fastest">3.*</td>
-                    <td class="second">2.</td>
-                    <td class="first">1.*</td>
-                    <td class="third">3.*</td>
-                </tr>
-                <tr>
-                    <td class="third">3.</td>
-                    <td> sG_Hypnotize </td>
-                    <td class="alfaromeo"> Alfa Romeo </td>
-                    <td> 144</td>
-                    <td class="first">1.*</td>
-                    <td class="first-sprint"> 1.</td>
-                    <td class="dnf-text">DNF</td>
-                    <td class="third">3.</td>
-                    <td class="second">2.</td>
-                    <td class="second">2.</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="second fastest">2.</td>
-                    <td class="second">2.</td>
-                    <td>6.</td>
-                    <td class="third">3.</td>
-                    <td class="dnf-text">DNF</td>
-                </tr> 
-                <tr>
-                    <td> 4.</td>
-                    <td> Leanderrrrrr </td>
-                    <td class="ersatz"> Ersatzfahrer </td>
-                    <td> 99</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="first">1.</td>
-                    <td class="fastest">6.*</td>
-                    <td class="first">1.*</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="first">1.*</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="third">3.*</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                </tr>
-                <tr>
-                    <td> 5.</td>
-                    <td> El_Knallfrosch </td>
-                    <td class="ersatz"> Ersatzfahrer </td>
-                    <td> 72</td>
-                    <td class="dns-text">DNS</td>
-                    <td>7.</td>
-                    <td class="second">2.</td>
-                    <td class="dns-text">DNS</td>
-                    <td>6.</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="second">2.</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td>9.</td>
-                    <td>4.</td>
-                    <td>4.</td>
-                    <td class="dnf-text">DNF</td>
-                </tr>
-                <tr>
-                    <td> 6.</td>
-                    <td> Kimi7Raikkonen_ </td>
-                    <td class="ferrari"> Ferrari </td>
-                    <td>69</td>
-                    <td>9.</td>
-                    <td>3.</td>
-                    <td class="first">1.</td>
-                    <td>10.</td>
-                    <td>8.</td>
-                    <td class="third">3.</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td>8.</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td>4.</td>
-                </tr>  
-                <tr>
-                    <td> 7.</td>
-                    <td> I-B-O_records </td>
-                    <td class="haas"> Haas </td>
-                    <td> 68</td>
-                    <td>5.</td>
-                    <td>15.</td>
-                    <td>4.</td>
-                    <td class="dnf-text">DNF</td>
-                    <td class="third">3.</td>
-                    <td class="dnf-text">DNF</td>
-                    <td>4.</td>
-                    <td>7.</td>
-                    <td>10.</td>
-                    <td>8.</td>
-                    <td class="dns-text">DNS</td>
-                    <td>7.</td>
-                    <td>7.</td>
-                    <td>12.</td>
-                </tr>
-                <tr>
-                    <td> 8.</td>
-                    <td> Familien_Herrsch </td>
-                    <td class="ferrari"> Ferrari </td>
-                    <td> 67</td>
-                    <td>6.</td>
-                    <td>2.*</td>
-                    <td>15.</td>
-                    <td>8.</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td>3.</td>
-                    <td class="second">2.</td>
-                    <td>4.</td>
-                    <td>4.</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dns-text">DNS</td>
-                </tr>
-                <tr>
-                    <td> 9.</td>
-                    <td> Lord_Beskar </td>
-                    <td class="mclaren"> McLaren </td>
-                    <td>67</td>
-                    <td class="dns-text">DNS</td>
-                    <td>10.</td>
-                    <td>7.</td>
-                    <td>4.</td>
-                    <td class="fastest">5.</td>
-                    <td>4.</td>
-                    <td>9.</td>
-                    <td>5.</td>
-                    <td>4.</td>
-                    <td>6.</td>
-                    <td class="dns-text">DNS</td>
-                    <td class="dnf-points">16. (DNF)</td>
-                    <td class="dnf-points">14. (DNF)</td>
-                    <td class="dns-text">DNS</td>
-                </tr> 
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Fahrer</th>
+            <th>Punkte</th>
+            <th>Team</th>
+            <th class="flag"><img src="spanien_klein.png"> <br><br> Spanien <br><br>  </th>
+            <th class="flag"><img src="großbritannien.png"> Groß-britannien (Sprint)</th>
+            <th class="flag"><img src="großbritannien.png"> Groß-britannien<br><br></th>
+            <th class="flag"><img src="imola.png"> <br><br>Imola <br><br></th>
+            <th class="flag"><img src="katar.png"><br><br> Katar<br><br></th>
+            <th class="flag"><img src="baku.png">Aser-baidschan<br><br></th>
+            <th class="flag"><img src="japan.png"><br><br>Japan<br><br></th>
+            <th class="flag"><img src="belgien.png">Belgien (Sprint) <br><br></th>
+            <th class="flag"><img src="belgien.png"><br><br>Belgien<br><br> </th>
+            <th class="flag"><img src="niederlande.png">Nieder-lande<br><br></th>
+            <th class="flag"><img src="usa.png">Las Vegas<br><br> </th>
+            <th class="flag"><img src="portugal_klein.png"><br><br>Portugal <br><br></th>
+            <th class="flag"><img src="saudi-arabien.png">Saudi-Arabien<br><br></th>
+            <th class="flag"><img src="brasilien.png"><br><br>Brasilien<br><br></th>
+        
+        </tr>
+        <tr>
+            <td class="first"> 1.</td>
+            <td> ItziiiBitziii </td>
+            <td class="mercedes"> Mercedes </td>
+            <td> 184</td>
+            <td class="second">2.</td>
+            <td>6.</td>
+            <td>9.</td>
+            <td class="fastest">6.</td>
+            <td>4.</td>
+            <td class="dns-text">DNS</td>
+            <td class="third">3.</td>
+            <td>2.</td>
+            <td class="third fastest">3.</td>
+            <td>7.</td>
+            <td class="first">1.</td>
+            <td class="first fastest">1.</td>
+            <td class="second fastest">2.</td>
+            <td class="first fastest">1.</td>
+        </tr>
+        <tr>
+            <td class="second"> 2.</td>
+            <td> MarvinSCP10 </td>
+            <td class="williams"> Williams </td>
+            <td> 167</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="first">1.*</td>
+            <td>12.*</td>
+            <td class="first">1.</td>
+            <td class="dns-text">DNS</td>
+            <td class="first-sprint">1.*</td>
+            <td class="first">1.</td>
+            <td>5.</td>
+            <td class="third fastest">3.*</td>
+            <td class="second">2.</td>
+            <td class="first">1.*</td>
+            <td class="third">3.*</td>
+        </tr>
+        <tr>
+            <td class="third">3.</td>
+            <td> sG_Hypnotize </td>
+            <td class="alfaromeo"> Alfa Romeo </td>
+            <td> 144</td>
+            <td class="first">1.*</td>
+            <td class="first-sprint"> 1.</td>
+            <td class="dnf-text">DNF</td>
+            <td class="third">3.</td>
+            <td class="second">2.</td>
+            <td class="second">2.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="second fastest">2.</td>
+            <td class="second">2.</td>
+            <td>6.</td>
+            <td class="third">3.</td>
+            <td class="dnf-text">DNF</td>
+        </tr> 
+        <tr>
+            <td> 4.</td>
+            <td> Leanderrrrrr </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 99</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="first">1.</td>
+            <td class="fastest">6.*</td>
+            <td class="first">1.*</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="first">1.*</td>
+            <td class="dns-text">DNS</td>
+            <td class="third">3.*</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td> 5.</td>
+            <td> El_Knallfrosch </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 72</td>
+            <td class="dns-text">DNS</td>
+            <td>7.</td>
+            <td class="second">2.</td>
+            <td class="dns-text">DNS</td>
+            <td>6.</td>
+            <td class="dns-text">DNS</td>
+            <td class="second">2.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>9.</td>
+            <td>4.</td>
+            <td>4.</td>
+            <td class="dnf-text">DNF</td>
+        </tr>
+        <tr>
+            <td> 6.</td>
+            <td> Kimi7Raikkonen_ </td>
+            <td class="ferrari"> Ferrari </td>
+            <td>69</td>
+            <td>9.</td>
+            <td>3.</td>
+            <td class="first">1.</td>
+            <td>10.</td>
+            <td>8.</td>
+            <td class="third">3.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>8.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>4.</td>
+        </tr>  
+        <tr>
+            <td> 7.</td>
+            <td> I-B-O_records </td>
+            <td class="haas"> Haas </td>
+            <td> 68</td>
+            <td>5.</td>
+            <td>15.</td>
+            <td>4.</td>
+            <td class="dnf-text">DNF</td>
+            <td class="third">3.</td>
+            <td class="dnf-text">DNF</td>
+            <td>4.</td>
+            <td>7.</td>
+            <td>10.</td>
+            <td>8.</td>
+            <td class="dns-text">DNS</td>
+            <td>7.</td>
+            <td>7.</td>
+            <td>12.</td>
+        </tr>
+        <tr>
+            <td> 8.</td>
+            <td> Familien_Herrsch </td>
+            <td class="ferrari"> Ferrari </td>
+            <td> 67</td>
+            <td>6.</td>
+            <td>2.*</td>
+            <td>15.</td>
+            <td>8.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>3.</td>
+            <td class="second">2.</td>
+            <td>4.</td>
+            <td>4.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td> 9.</td>
+            <td> Lord_Beskar </td>
+            <td class="mclaren"> McLaren </td>
+            <td>67</td>
+            <td class="dns-text">DNS</td>
+            <td>10.</td>
+            <td>7.</td>
+            <td>4.</td>
+            <td class="fastest">5.</td>
+            <td>4.</td>
+            <td>9.</td>
+            <td>5.</td>
+            <td>4.</td>
+            <td>6.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-points">16. (DNF)</td>
+            <td class="dnf-points">14. (DNF)</td>
+            <td class="dns-text">DNS</td>
+        </tr> 
+        <tr>
+            <td> 10.</td>
+            <td> St_Paule_ </td>
+            <td class="williams"> Williams </td>
+            <td>61</td>
+            <td class="fastest">4.</td>
+            <td>4.</td>
+            <td>5.</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dns-text">DNS</td>
+            <td>5.</td>
+            <td>5.</td>
+            <td class="dnf-text">DNF</td>
+            <td>6.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-text">DNF</td>
+            <td>11.</td>
+            <td>8.</td>
+            <td>10.</td>
+        </tr>
+        <tr>
+            <td> 11.</td>
+            <td> Heinz007007007 </td>
+            <td class="small astonmartin"> Aston Martin </td>
+            <td> 60 </td>
+            <td class="third">3.</td>
+            <td>5.</td>
+            <td class="fastest">11.</td>
+            <td class="second">2.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-text">DNF</td>
+            <td>4.</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="second">2.</td>
+        </tr>  
+        <tr>
+            <td> 12.</td>
+            <td> MAJO_IST_DA_ </td>
+            <td class="alphatauri"> Alpha Tauri </td>
+            <td> 52</td>
+            <td>7.</td>
+            <td>8.</td>
+            <td class="third">3.</td>
+            <td>7.</td>
+            <td>11.</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dnf-points">14. (DNF)</td>
+            <td>6.</td>
+            <td>5.</td>
+            <td>9.</td>
+            <td>6.</td>
+            <td>10.</td>
+            <td class="dnf-text">DNF</td>
+            <td>14.</td>
+        </tr>
+        <tr>
+            <td> 13.</td>
+            <td> FCBT2504 </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 39</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>5.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>6.</td>
+            <td>8.</td>
+            <td>7.</td>
+            <td class="dns-text">DNS</td>
+            <td>5.</td>
+            <td>8.</td>
+            <td class="dns-text">DNS</td>
+            <td>11.</td>
+        </tr>
+        <tr>
+            <td> 14.</td>
+            <td> Rizmo86_ </td>
+            <td class="mercedes"> Mercedes </td>
+            <td> 22</td>
+            <td>11.</td>
+            <td>14.</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dnf-text">DNF</td>
+            <td>7.</td>
+            <td class="dnf-points">7. (DNF)</td>
+            <td class="fastest">12.</td>
+            <td>12.</td>
+            <td>8.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>12.</td>
+            <td class="dnf-text">DNF</td>
+            <td>7.</td>
+        </tr>
+        <tr>
+            <td> 15.</td>
+            <td> Scorpien2011 </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 20</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>5.</td>
+            <td>5.</td>
+        </tr>
+        <tr>
+            <td >16.</td>
+            <td> MuhdijaBurek </td>
+            <td class="alfaromeo"> Alfa Romeo </td>
+            <td> 19</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-points">8. (DNF)</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="third">3.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td>17.</td>
+            <td> Basti_732006 </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td>18</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>5.</td>
+            <td class="dns-text">DNS</td>
+            <td>6.</td>
+        </tr>
+        <tr>
+            <td> 18.</td>
+            <td> MaxVerstappen33x </td>
+            <td class="redbull"> Red Bull </td>
+            <td> 17</td>
+            <td class="dns-text">DNS</td>
+            <td>13.</td>
+            <td>6.</td>
+            <td class="dnf-text">DNF</td>
+            <td>9.</td>
+            <td class="dnf-points">9. (DNF)</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-points">10. (DNF)</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>8.</td>
+        </tr>
+        <tr>
+            <td> 19.</td>
+            <td> bigholly88 </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 17</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>8.</td>
+            <td>11.</td>
+            <td>9.</td>
+            <td>10.</td>
+            <td>7.</td>
+            <td>9.</td>
+            <td>9.</td>
+            <td class="dnf-text">DNF</td>
+        </tr>
+        <tr>
+            <td> 20.</td>
+            <td> AquxZ_vD</td>
+            <td class="mclaren"> McLaren </td>
+            <td> 10</td>
+            <td>10.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>11.</td>
+            <td>10.</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dns-text">DNS (Sperre)</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-points">14. (DNF)</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>6.</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td> 21.</td>
+            <td> Itachi__F1 </td>
+            <td class="alpine"> Alpine </td>
+            <td> 7</td>
+            <td>8.</td>
+            <td>9.</td>
+            <td>10.</td>
+            <td>9.</td>
+            <td>16.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>  
+        <tr>
+            <td> 22.</td>
+            <td> YBino </td>
+            <td class="haas"> Haas </td>
+            <td> 6</td>
+            <td class="dnf-text">DNF</td>
+            <td>18.</td>
+            <td>12.</td>
+            <td class="dns-text">DNS</td>
+            <td>14.</td>
+            <td class="dnf-text">DNF</td>
+            <td>7.</td>
+            <td>10.</td>
+            <td>12.</td>
+            <td>12.</td>
+            <td class="dnf-text">DNF</td>
+            <td>15.</td>
+            <td>12.</td>
+            <td>15.</td>
+        </tr>
+        <tr>
+            <td> 23.</td>
+            <td> Montgomery </td>
+            <td class="small astonmartin"> Aston Martin </td>
+            <td> 4</td>
+            <td>14.</td>
+            <td>16.</td>
+            <td>8.</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td> 24.</td>
+            <td> DerCreeper08 </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 2</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>9.</td>
+        </tr>
+        <tr>
+            <td> 25.</td>
+            <td> He-Man1897 </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 1</td>
+            <td>12.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-text">DNF</td>
+            <td>10.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-points">13. (DNF)</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>13.</td>
+        </tr>
+        <tr>
+            <td> 26.</td>
+            <td> Gamer-Sven05 </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 1</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>10.</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td> 27.</td>
+            <td> GiulioP-1112 </td>
+            <td class="alpine"> Alpine </td>
+            <td> 0</td>
+            <td class="dns-text">DNS</td>
+            <td>12.</td>
+            <td>13.</td>
+            <td class="dns-text">DNS</td>
+            <td>15.</td>
+            <td class="dns-text">DNS</td>
+            <td>11.</td>
+            <td>9.</td>
+            <td>11.</td>
+            <td>11.</td>
+            <td class="dnf-text">DNF</td>
+            <td>13.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td> 28.</td>
+            <td> LK58-MX </td>
+            <td class="redbull"> Red Bull </td>
+            <td>0</td>
+            <td>15.</td>
+            <td>11.</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-points">15. (DNF)</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td> 29.</td>
+            <td> orangemaracuja </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 0</td>
+            <td>13.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td> 30.</td>
+            <td> RoyceRoyal </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 0</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>13.</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td> 31.</td>
+            <td> diopai </td>
+            <td class="alphatauri"> Alpha Tauri </td>
+            <td> 0</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dnf-points">13. (DNF)</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-points">13. (DNF)</td>
+            <td>17.</td>
+        </tr>
+        <tr>
+            <td> 32.</td>
+            <td> xSebVettel5x </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 0</td>
+            <td class="dns-text">DNS</td>
+            <td>17.</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td> 33.</td>
+            <td> Bennyihmseiner </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 0</td>
+            <td class="dnf-text">DNF</td>
+            <td>19.</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td> 34.</td>
+            <td> friti </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 0</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dnf-text">DNF</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        <tr>
+            <td> 35.</td>
+            <td> Denilson-DSP22 </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 0</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+        </tr>
+        
+        <tr>
+            <td> 36.</td>
+            <td> Teschi2608 </td>
+            <td class="ersatz"> Ersatzfahrer </td>
+            <td> 0</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td class="dns-text">DNS</td>
+            <td>14.</td>
+            <td>11.</td>
+            <td>16.</td>
+        </tr>
+    </table>
 
-        </table>
-    </div>
 </body>
 
 

@@ -1,0 +1,124 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+}
+
+th {
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.flag{
+    font-size: 65%;
+    max-width: 50px;
+    min-width: 50px;
+    
+}
+td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+img{
+    width: 100%;
+}
+.dnf-text {
+    font-size: 75%;
+    color: red;
+}
+
+.dnf-points{
+    font-size: 65%;
+    color: black;
+}
+
+.dns-text {
+    font-size: 75%;
+    color: darkblue;
+}
+
+.first {
+    background-color: rgb(241, 241, 87);
+}
+.first-sprint {
+    background-color: rgb(236, 236, 161);
+}
+
+.second {
+    background-color: rgb(187, 187, 187);
+}
+
+.third {
+    background-color: burlywood;
+}
+
+.fastest {
+    color: darkviolet;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.teamTabelle {
+    border: 3px solid black;
+    border-collapse:  collapse;
+
+}
+.small {
+    font-size: 90%;
+}
+
+.points{
+    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.ferrari{
+    background-color:rgb(255, 49, 49);
+}
+.ersatz{
+    background-color:rgb(200, 200, 200);
+}
+.ferrari_light{
+    background-color:rgb(255, 49, 49);
+    opacity: 0.5;
+}
+.mercedes{
+    background-color: cyan;
+}
+.redbull{
+    background-color: darkblue;
+    color: white;
+}
+.williams{
+    background-color: blue;
+    color: white;
+}
+.alpine{
+    background-color: rgb(56, 142, 255);
+}
+.alfaromeo{
+    background-color: darkred;
+    color: white;
+}
+.alphatauri{
+    background-color: rgb(118, 96, 129);
+    color: white;
+}
+.mclaren{
+    background-color: orange;
+}
+.astonmartin{
+    background-color: rgb(83, 170, 83);
+}
+.haas{
+    background-color: white;
+}
