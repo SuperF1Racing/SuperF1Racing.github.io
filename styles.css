@@ -127,3 +127,9 @@ img{
 h1{
     text-align: center;
 }
+.ersterAbschnitt{
+    background-color: rgb(165, 255, 206);
+}
+.zweiterAbschnitt{
+    background-color: rgb(129, 240, 255);
+}
