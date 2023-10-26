@@ -126,10 +126,44 @@ img{
 
 h1{
     text-align: center;
+    margin-bottom: 5px;
 }
+h2{
+    text-align: center;
+}
+
+
+
+.navbar{
+    background-color: blue;
+    position: fixed;
+    width: 100%;
+}
+.navlist{
+    float: right;
+}
+.navlist li{
+    display: inline-block;
+}
+.navlist li a{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.navlist li a:hover{
+    color: rgb(253, 9, 9);
+    text-decoration: underline;
+}
+
+/* background: url("SFR_Logo_S5.png") center center; */
+
 .ersterAbschnitt{
-    background-color: rgb(165, 255, 206);
+    background-color: rgb(129, 255, 135);
 }
 .zweiterAbschnitt{
     background-color: rgb(129, 240, 255);
+}
+.logo{
+    width:100px;
+    height:100px;
 }
