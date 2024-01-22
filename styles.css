@@ -133,6 +133,10 @@ h2{
     margin-top:0;
     padding: 8px;
 }
+
+h3{
+    text-align: center;
+}
 h4{
     text-align: center;
     margin-bottom: 10px;
@@ -140,6 +144,7 @@ h4{
 }
 body {
     margin: 0;
+    font-size: 18px;
 }
 
 
@@ -181,6 +186,7 @@ body {
 }
 .rennkalender {
     margin-bottom: 40px;
+    line-height: 150%;
 }
 .rennkalender a{
     color: rgb(0, 0, 0);
@@ -191,7 +197,7 @@ body {
     text-decoration: underline;
 }
 .rennkalender img{
-    width: 10px;
+    width: 18px;
 }
 .aktuelleSaison{
     background-color: aliceblue;
@@ -239,8 +245,8 @@ margin-top: 0px;}
     height: 40px
 }
 .img-text{
-    height: 10px;
-    width: 10px;
+    height: 14px;
+    width: 14px;
 }
 
 
